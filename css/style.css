@@ -1,0 +1,160 @@
+body{
+    margin: 5% 0 0 0;
+    padding: 0;
+    background-color: rgb(238, 231, 198);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 150%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    /* color: black; */
+    font-style: oblique;
+    /* font-size: 25px; */
+}
+
+nav a:visited{
+    color: rgb(102, 98, 70);
+}
+
+nav a:focus-visible{
+    color: black;
+    text-decoration: underline;
+}
+
+header p{
+    font-size: larger;
+    font-style: italic;
+    text-align: center;
+}
+
+dt{
+    font-weight: bolder;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+dd{
+    font-weight: 800;
+    font-style: italic;
+    padding: 0 0 15px 10px;
+}
+
+main{
+    /* display:flex;
+    align-items: wrap; */
+    padding: 0 5% 0 5%;
+}
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+h1{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 120px;
+    font-weight: bolder;
+    line-height: 150%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2{
+    font-size: 50px;
+    line-height: 1.5;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+div h2{
+    margin-top: 40px;
+}
+
+img + h3{
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 5px 0 10px 0;
+}
+
+p + h3{
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 15px 0 5px 0;
+}
+
+h3 + ul{
+    font-style: italic;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5;
+    /* padding: 2% 0 0 2%; */
+}
+
+li{
+    display: inline-block;
+    padding: 0px 20px 0px 0px;
+}
+
+/* li a{
+    font-size: larger;
+} */
+
+img{
+    /* display: flex;
+    flex-grow: 1; */
+    height: auto;
+    width: 100%;
+    margin: 20px 0 20px 0;
+    padding: 24px;
+    /* padding: 20px; */
+    border-radius: 8%;
+}
+
+img:nth-of-type(odd){
+    border: 10px solid black ;
+} 
+
+div{
+    padding: 20%;
+}
+
+footer{
+    background-color: rgb(221, 213, 173);
+    margin: 5% 0 0 0;
+    padding: 2% 0 2% 5%;
+}
+
+footer a{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style:oblique;
+}
+
+/* footer p {
+    margin: 2%;
+} */
