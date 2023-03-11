@@ -192,7 +192,7 @@ footer a{
 } 
 
 .Feminist-Dictionary-bg{
-    background-image: url("../images/iran.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/iran.jpg");
     /* background-color: black; */
     /* background-repeat: no-repeat; */
     /* height: 450px; */
@@ -203,10 +203,10 @@ footer a{
     animation: pulse 20s ;
 }
 
-.Feminist-Dictionary-bg {
+.Feminist-Dictionary-bg h1, .Feminist-Dictionary-bg p {
     /* -webkit-text-stroke-width: 4px; */
     -webkit-text-stroke-color: black;
-    color: rgb(237, 237, 237);
+    color: rgb(227, 227, 227);
 }
 
 
