@@ -9,9 +9,14 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- connect to a Google font -->  
+  <!-- connect to a Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">  
   <!-- connect to a Font Aweseom font -->
+  <script src="https://kit.fontawesome.com/ca2f2bec9f.js" crossorigin="anonymous"></script>
   <!-- connect to a favicon -->
+  <link rel="icon"  href="images/W.w-favicon-512x512.png">
 
   <title>Women's Web - Literature</title>
 </head>
@@ -20,10 +25,22 @@
   <header>
     <nav>
         <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="literature.html">Literature</a></li>
-          <li><a href="history.html">History and Politics</a></li>
-          <li><a href="femdict.html">Feminist Dictionary</a></li>
+          <li>
+            <i class="fa-sharp fa-solid fa-house"></i>
+            <a href="index.html">About</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-book"></i>
+            <a href="literature.html" class="current">Literature</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-scroll"></i>
+            <a href="history.html">History and Politics</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-spell-check"></i>
+            <a href="femdict.html">Feminist Dictionary</a>
+          </li>
         </ul>
     </nav>
       <!-- definitions from meriam webster -->
@@ -36,7 +53,7 @@
     <h1>Feminist Literature</h1>
   </header>
 
-  <main>
+  <main class="container" id="authors">
       <div>
       <h2>bell hooks</h2>
       <img src="images/bell_hooks.jpg"  width="200" alt="Image of bell hooks">
@@ -348,13 +365,21 @@
         </ul>
       </div>
     </main>
-    <footer>
-      <p class="thanks">
-        Thanks for visiting! <i class="far fa-grin"> </i>
-      </p>
-      <p>Orginal content created by Kelsey Toporski 2019</p>
-      <a href="#top" class="tops">Back to Top</a>
 
-    </footer>
+    <footer>
+    <i class="fa-solid fa-house"></i>
+    <p class="thanks">
+      Thanks for visiting! <i></i>
+    </p>
+    <p class="og-content">
+      Orginal content created by Kelsey Toporski 2019
+    </p>
+
+    <i class="fa-solid fa-circle-up"></i>
+    <p class="back-to-top"> 
+    <a href="#main">Back to Top</a>
+    </p>
+  </footer>
+
   </body>
 </html>
