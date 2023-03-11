@@ -9,32 +9,51 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- connect to a Google font -->  
+  <!-- connect to a Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">  
   <!-- connect to a Font Aweseom font -->
+  <script src="https://kit.fontawesome.com/ca2f2bec9f.js" crossorigin="anonymous"></script>
   <!-- connect to a favicon -->
+  <link rel="icon"  href="images/W.w-favicon-512x512.png">
 
   <title>Women's Web</title>
 </head>
 
 <a href="#main" class="skip">Skip to main content</a>
-  
+
 <body>
   <header>
     <nav>
         <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="literature.html">Literature</a></li>
-          <li><a href="history.html">History and Politics</a></li>
-          <li><a href="femdict.html">Feminist Dictionary</a></li>
+          <li>
+            <i class="fa-sharp fa-solid fa-house"></i>
+            <a href="index.html" class="current">About</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-book"></i>
+            <a href="literature.html">Literature</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-scroll"></i>
+            <a href="history.html">History and Politics</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-spell-check"></i>
+            <a href="femdict.html">Feminist Dictionary</a>
+          </li>
         </ul>
     </nav>
     <h1> Woman's Web </h1>
   </header>
 
-  <main>
-    <img src="images/women_march_pano.jpg" width="200" alt="Image of the Ann Arbor Women's March">
+  <main class="container" id="main">
 
-    <div>
+    <div class="header-image">
+      <img src="images/women_march_pano.jpg" width="200" alt="Image of the Ann Arbor Women's March"> 
+    </div>
+    <div class = "about">
       <p>
         This website started as an idea when Kelsey Toporski was a freshman in college taking my first <a href="https://lsa.umich.edu/women"> Women's Studies</a> class. As a junior, she had the skill set to make it happen. Growing up in a small, rural, conservative town, this class was really her first introduction to feminism and feminist thought, and she wanted to share her new found knowledge with others. This website is where a lot of feminist things could be compiled in one place, purely because people might not otherwise know about it. Her hometown may not have been forward thinking, but it did have internet connection.
       </p>
@@ -42,40 +61,50 @@
         This website currently contains 3 pages other than this one - click below to see a short description of each!
       </p>
     </div>
-
+    
+    <div class="Literature">
       <h3>Literature</h3>
-      <div>
         <p>
           This page features books written by women and for women, books and essays about feminism, poems, plays, and bios of female writers.
         </p>
-      </div>
+    </div>
+   
+    <div class="History-Politics">
       <h3>History / Politics</h3>
-      <div>
         <p>
           This page features bios of important women in history and women currently in Congress or otherwise politically involved.
         </p>
-      </div>
+    </div>
+
+    <div class="Feminist-Dictionary">
       <h3>Feminist Dictionary</h3>
-      <div>
         <p>
           This page features a collection of important feminist terminology that might make reading easier. These will include formal definitions and my own understandings of the terms.
         </p>
-      </div>
+    </div>
 
-    <div>
+    <div class="DISCLAIMER">
       <p>
         <span>Kelsey's DISCLAIMER:</span> I did not know everything!! I'm only human - I'm still growing and learning and I have a limited knowledge of things, but I will do my best and work to make this page as inclusive and unbiased as possible.
       </p>
     </div>
+
   </main>
 
   <footer>
+    <i class="fa-solid fa-house"></i>
     <p class="thanks">
       Thanks for visiting! <i></i>
     </p>
-    <p>Orginal content created by Kelsey Toporski 2019</p>
+    <p class="og-content">
+      Orginal content created by Kelsey Toporski 2019
+    </p>
+
+    <i class="fa-solid fa-circle-up"></i>
+    <p class="back-to-top"> 
     <a href="#main">Back to Top</a>
+    </p>
   </footer>
- 
+
 </body>
 </html>
