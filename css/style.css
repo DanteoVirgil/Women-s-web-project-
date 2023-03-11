@@ -6,9 +6,13 @@ body{
     line-height: 150%;
 }
 
-nav {
+ul {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    column-gap: 2%;
 }
 
 nav a{
@@ -73,12 +77,12 @@ main{
 }
 
 h1{
-    display:flex;
+    display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 120px;
+    font-size: 16vw;
     font-weight: bolder;
-    line-height: 150%;
+    line-height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -87,6 +91,13 @@ h2{
     line-height: 1.5;
     font-family: cursive;
     font-weight: bolder;
+}
+
+h3{
+    font-size: 30px;
+    margin-bottom: 6%;
+    font-family: cursive;
+    font-weight: bold;
 }
 
 div h2{
@@ -118,7 +129,7 @@ p{
 
 li{
     display: inline-block;
-    padding: 0px 20px 0px 0px;
+    padding: 10px 20px 10px 20px;
 }
 
 /* li a{
@@ -158,3 +169,156 @@ footer a{
 /* footer p {
     margin: 2%;
 } */
+
+.current{
+    font-size: x-large;
+}
+
+.container {
+    display: grid;
+}
+
+
+@keyframes pulse{
+    from {
+        margin-left: 100%;
+        width: 100%;
+        }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+        }
+} 
+
+.Feminist-Dictionary{
+    background-image: url("../images/iran.jpg");
+    /* background-color: black; */
+    /* background-repeat: no-repeat; */
+    /* height: 450px; */
+    background-size: contain;
+    /* background-clip: padding-box; */
+    margin-bottom: 5%;
+    padding: 2%;
+    animation: pulse 20s ;
+}
+
+.Feminist-Dictionary h1, .Feminist-Dictionary p {
+    /* -webkit-text-stroke-width: 4px; */
+    -webkit-text-stroke-color: black;
+    color: rgb(237, 237, 237);
+}
+
+
+/*grid layouts for each page  */
+@media screen and (min-width: 800px){
+
+ul {
+    /* display: flex; */
+    flex-direction: row;
+}
+
+#main {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 5%;
+    column-gap: 2%;
+    margin-bottom: 16%;
+}
+
+#authors{
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4%;
+}
+
+h3 + ul{
+    display: block;
+}
+
+#history{
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4%;
+}
+
+/* #dictionary{
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4%;
+} */
+
+dl{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(12, 40%);
+    overflow: scroll;
+    column-gap: 5%;
+}
+
+.header-image, .about, .DISCLAIMER{
+grid-column: 1 / span 3;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 26px auto 26px auto; 
+}
+
+.fa-solid:hover{
+    color: blueviolet;
+}
+
+.fa-house {
+    grid-column-start: 1 ;
+    grid-row-start: 1;
+}
+
+.fa-circle-up{
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.back-to-top{
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+
+.thanks, .og-content{
+    grid-column-start: 2;
+}
+
+/* dt, dl{
+    display: block;
+} */
+
+/* @media screen and (min-width: 800px){
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+} */
+
+/** Code for prefers reduced motion **/
+/* Make no changes below this line.
+   *************************************** 
+   */
+   @media screen and (prefers-reduced-motion: reduce){
+    /*Turn off scroll*/
+    html{
+      scroll-behavior: auto; /* Removes scroll animation */
+    }
+  
+    /*Turn off transition*/
+    a.skip {
+      -webkit-transition: initial; /* sets to default setting */
+      transition: initial; /* sets to default setting */
+    }
+  
+    /*Turn off parallax*/
+    .intro{
+      background-attachment: initial;
+    }
+  }
+
+}
