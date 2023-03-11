@@ -203,7 +203,7 @@ footer a{
     animation: pulse 20s ;
 }
 
-.Feminist-Dictionary-bg h1, .Feminist-Dictionary-bg p {
+.Feminist-Dictionary h1, .Feminist-Dictionary p {
     /* -webkit-text-stroke-width: 4px; */
     -webkit-text-stroke-color: black;
     color: rgb(237, 237, 237);
