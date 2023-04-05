@@ -242,7 +242,7 @@ ul li .fa-house {
 
 /* mobile grid layout */
 
-@media screen and (min-width: 320px){
+@media only screen and (min-width: 320px){
 
 h1{
     font-size: 12vw;
@@ -250,6 +250,7 @@ h1{
 
 h3{
     font-size: 40px;
+    line-height: 1.5;
     margin-bottom: 2%;
 }
 
@@ -258,7 +259,6 @@ h3{
     margin: 4% 0;
     border: 4px solid black;
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    box-shadow: 10px 10px 12px rgb(139, 133, 109);
 }
 
 h2, h3{
@@ -279,7 +279,7 @@ dl{
 /* tablet grid layout */ /* tablet grid layout */ /* tablet grid layout */ /* tablet grid layout */ /* tablet grid layout */ /* tablet grid layout */
 
 
-@media screen and (min-width: 768px){
+@media only screen and (min-width: 768px){
 
 /* grid stuff BEGINS */
 #main {
@@ -391,7 +391,7 @@ dl{
 
 /* desktop grid layout */ /* desktop grid layout */ /* desktop grid layout */ /* desktop grid layout */ /* desktop grid layout */
 /* desktop grid layout */ /* desktop grid layout */ /* desktop grid layout */ /* desktop grid layout */ /* desktop grid layout */
-@media screen and (min-width: 992px){
+@media only screen and (min-width: 992px){
 
 /* global column styling */
 #main {
